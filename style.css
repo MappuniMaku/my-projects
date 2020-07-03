@@ -1,0 +1,70 @@
+h1 {
+    font-size: 42px;
+    color: #800000;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Pangolin', cursive;
+}
+
+.content {
+    height: 100%;
+    background-image: linear-gradient(to right bottom, #ddd6f3 , #faaca8);
+}
+
+header p {
+    text-align: center;
+    font-size: 28px;
+    color: blueviolet;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+a {
+    border: 1px solid black;
+    padding: 2px 10px;
+    margin: 5px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #A9A9A9, #34495e);
+    color: white;
+    min-height: 40px;
+    /* если сейчас задать vertical-align: middle, он не будет работать.
+    Чтобы он заработал, необходимо задать высоту строки line-height равную высоте блока! */
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    box-shadow: 0 0 5px 0 #34495e;
+}
+
+a:hover {
+    background-color: #708090;
+    transform: scale(1.05);
+}
+
+a p {
+    vertical-align: middle;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}

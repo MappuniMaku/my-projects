@@ -1,0 +1,138 @@
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #1E90FF;
+    border-radius: 5px;
+    width: 150px;
+    flex-wrap: wrap;
+    background-color: #333333;
+    background-image:
+      linear-gradient(135deg, white 25%, transparent 25%),
+      linear-gradient(225deg, white 25%, transparent 25%),
+      linear-gradient(45deg, white 25%, transparent 25%),
+      linear-gradient(315deg, white 25%, transparent 25%);
+    background-position:
+      0 0,
+      0 0,
+      25px 0,
+      25px 0;
+    background-size: 50px 50px;
+    /*    background-image:
+          linear-gradient(45deg, #555555 25px, transparent 25px),
+          linear-gradient(225deg, #000000 25px, transparent 25px),
+          linear-gradient(135deg, #555555 25px, transparent 25px),
+          linear-gradient(225deg, #555555 25px, transparent 25px),
+          linear-gradient(45deg, #000000 25px, transparent 25px),
+          linear-gradient(315deg, #555555 25px, transparent 25px);
+        background-size: 115px 115px;
+        background-repeat: repeat;
+        background-position:
+        70px -45px,
+      -45px -80px,
+      35px 70px,
+      -80px 35px,
+      35px -45px,
+      -45px 35px;
+      */
+    background-repeat: repeat;
+}
+
+.projects a::before,
+.projects a::after {
+    position: absolute;
+    width: 2px;
+    height: 45px;
+    background-color: #ffffff;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    top: 5px;
+}
+
+.projects a:hover::after,
+.projects a:hover::before {
+    opacity: 1;
+}
+
+.projects a:hover::before {
+    transform: translateX(-63px);
+
+}
+
+.projects a:hover::after {
+    transform: translateX(63px);
+}
+
+section {
+    margin: 40px auto;
+    width: 450px;
+    box-shadow: 0 0 3px #cccccc;
+    background-color: coral;
+    border: 5px solid teal;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+}
+  
+.slider input[type="radio"] {
+    display: none;
+}
+  
+.slider-inner {
+    overflow: hidden;
+}
+  
+.slider-slides {
+    width: 300%;
+    transition: transform 0.8s ease;
+}
+  
+.slider-slides img {
+    float: left;
+    width: 450px;
+    height: 320px;
+}
+  
+.slider-controls {
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+.slider-controls label {
+    display: inline-block;
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: #cccccc;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+  
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background-color: teal;
+}
+  
+#btn-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+  
+#btn-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-450px);
+}
+  
+#btn-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-900px);
+}

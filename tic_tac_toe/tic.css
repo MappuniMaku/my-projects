@@ -1,0 +1,44 @@
+.game div {
+    border: none;
+    padding: 0;
+    background-color: white;
+    width: 100px;
+    height: 90px;
+}
+
+.game div:not(.disabled):hover {
+    background: url(cross.jpg) no-repeat center/100%;
+    opacity: 0.5;
+}
+
+.cross {
+    background: url(cross.jpg) no-repeat center/100%;
+}
+
+.zero {
+    background: url(zero.jpg) no-repeat center/100%;
+}
+
+.game {
+    background-color: white;
+    border-radius: 25%;
+}
+
+table {
+    margin: 50px 50px;
+    border-collapse: collapse;
+}
+
+td {
+    border-top: 2px solid limegreen;
+    border-left: 2px solid limegreen;
+    padding: 5px;
+}
+
+td:first-of-type {
+    border-left: none;
+}
+
+tr:first-of-type td {
+    border-top: none;
+}

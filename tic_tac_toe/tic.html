@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <link href="tic.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <title>Крестики-нолики</title>
+    </head>
+
+    <body>
+    <div class="content">
+        <header>
+            <h1>Крестики-нолики</h1>
+            <p>Поставьте крестик, чтобы начать игру!</p>
+        </header>
+        <main>
+            <div class="game">
+                    <table>
+                        <tr>
+                            <td><div id="0" onclick="game.putCross(0)"></div></td>
+                            <td><div id="1" onclick="game.putCross(1)"></div></td>
+                            <td><div id="2" onclick="game.putCross(2)"></div></td>
+                        </tr>
+
+                        <tr>
+                            <td><div id="3" onclick="game.putCross(3)"></div></td>
+                            <td><div id="4" onclick="game.putCross(4)"></div></td>
+                            <td><div id="5" onclick="game.putCross(5)"></div></td>
+                        </tr>
+
+                        <tr>
+                            <td><div id="6" onclick="game.putCross(6)"></div></td>
+                            <td><div id="7" onclick="game.putCross(7)"></div></td>
+                            <td><div id="8" onclick="game.putCross(8)"></div></td>
+                        </tr>
+                    </table>
+            </div>
+        </main>
+
+        <footer>
+            <a href="tic.html"><p>Сыграть еще раз</p></a>
+            <a href="../index.html"><p>Назад</p></a>
+        </footer>
+        <script src="tic.js"></script>
+    </div>
+    </body>
+</html>

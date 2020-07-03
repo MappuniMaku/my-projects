@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <link href="card_game.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+        <title>Карточная игра</title>
+    </head>
+
+    <body>
+    <div class="content">
+
+      <div class="intro">
+        <header>
+          <h1>Карточная игра</h1>
+          <p>Вам необходимо будет открыть все пары одинаковых карт. Поторопитесь, ведь время ограничено!</p>
+        </header>
+        <footer>
+          <a href="#" onclick="cardGame.startGame()"><p>Начать игру</p></a>
+          <a href="../index.html"><p>Назад</p></a>
+        </footer>
+      </div>
+
+      <div class="game" hidden>
+        <header>
+            <h1>Карточная игра</h1>
+            <p>Откройте все пары одинаковых карт!</p>
+        </header>
+        
+        <main>
+            <div class="cards-container">
+                <div class="scene">
+                    <div class="card" id="0" onclick="cardGame.flipCard(0)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="1" onclick="cardGame.flipCard(1)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="2" onclick="cardGame.flipCard(2)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="3" onclick="cardGame.flipCard(3)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="4" onclick="cardGame.flipCard(4)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="5" onclick="cardGame.flipCard(5)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="6" onclick="cardGame.flipCard(6)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="7" onclick="cardGame.flipCard(7)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="8" onclick="cardGame.flipCard(8)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+                <div class="scene">
+                    <div class="card" id="9" onclick="cardGame.flipCard(9)">
+                      <div class="card__face card__face--front"></div>
+                      <div class="card__face card__face--back"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timer">
+              <p>Оставшееся время: </p>
+              <span class="seconds">30</span>
+            </div>
+        </main>
+
+        <footer>
+            <a href="card_game.html"><p>Назад</p></a>
+        </footer>
+      </div>
+
+      <div class="win" hidden>
+        <main>
+          <img src="happiness.jpg">
+          <p>Поздравляем, вы выиграли!</p>
+        </main>
+        <footer>
+          <a href="card_game.html"><p>Сыграть еще раз</p></a>
+          <a href="../index.html"><p>Назад</p></a>
+        </footer>
+      </div>
+
+      <div class="defeat" hidden>
+        <main>
+          <img src="sadness.jpg">
+          <p>К сожалению, вы не успели открыть все одинаковые карты :(</p>
+        </main>
+        <footer>
+          <a href="card_game.html"><p>Сыграть еще раз</p></a>
+          <a href="../index.html"><p>Назад</p></a>
+        </footer>
+      </div>
+
+        <script src="card_game.js"></script>
+    </div>
+    </body>
+</html>
